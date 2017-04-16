@@ -23,6 +23,6 @@ print "Uploading file"
 transport = paramiko.Transport(host, server_port)
 transport.connect(username=username, password=password)
 sftp = paramiko.SFTPClient.from_transport(transport)
-sftp.put("/Users/jasonryan/Desktop/test.txt", os.path.join(server_root_adr, "test.txt"))
+sftp.put("/Users/jasonryan/PycharmProjects/EmbeddedSp17_Project/Data/master_scoreboard.json", os.path.join(server_root_adr, "master_scoreboard.json"))
 sftp.close()
 print "\nDone"
