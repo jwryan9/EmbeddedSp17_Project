@@ -26,7 +26,7 @@ def generate_score_data():
                                      overview['home_time'], overview['home_ampm']])
             elif overview['status'] == 'Final':
                 out_writer.writerow([overview['away_team_name'], overview['home_team_name'], '-1',
-                                     overview['away_team_score'], overview['home_team_score'], overview['home_time'],
+                                     overview['away_team_runs'], overview['home_team_runs'], overview['home_time'],
                                      overview['home_ampm']])
             elif overview['status'] == 'In Progress':
                 out_writer.writerow([overview['away_team_name'], overview['home_team_name'], overview['inning'],
