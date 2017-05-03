@@ -18,4 +18,6 @@ def read_data(file_path):
         out_str += away_teams[i] + ',' + home_teams[i] + ',' + innings[i] + ',' + away_scores[i] + ',' + home_scores[i] \
                   + ',' + start_times[i] + ',' + am_pms[i] + ';'
 
+    print('Game Data Read')
+
     return out_str
